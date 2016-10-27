@@ -24,7 +24,7 @@ Aguarde alguns minutos e o PhoneGap está instalado
 
   [https://registry.npmjs.org/npm/-/npm-3.10.9.tgz](https://registry.npmjs.org/npm/-/npm-3.10.9.tgz)
   
-4. Descomprimir esta pacote e acesse a pasta dele
+4. Descomprimir esta pacote e acesse a pasta *package* dentro dele
 
 5. Execute o comando:
 
@@ -32,5 +32,9 @@ Aguarde alguns minutos e o PhoneGap está instalado
   c:/node/node.exe cli.js install -gf
   ```
   
-6.
-  
+6. Execute o comando para instalar o phonegap
+
+  ```
+  npm install -g phonegap
+  ```
+  Aguarde alguns minutos e o PhoneGap está instalado
