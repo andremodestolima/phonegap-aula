@@ -42,7 +42,7 @@
 
   ![5](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_5.png?raw=true)
 
-9. Abra o seu navegador na url http://localhost:3000/ e aguarde a aparecer a seguinte tela:
+9. Abra o seu navegador na url [http://localhost:3000/](http://localhost:3000/) e aguarde a aparecer a seguinte tela:
 
   ![6](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_6.png?raw=true)
 
@@ -57,7 +57,7 @@
 
   [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
   
-2. Salve na pasta `C:/node/`
+2. Salve na pasta `C:\node\`
 
 3. Faça o download deste pacote e salve na mesma pasta que salvou o node.js
 
@@ -65,15 +65,17 @@
   
 4. Descomprimir esta pacote e acesse a pasta *package* dentro dele
 
-5. Execute o comando:
+5. Execute o comando dentro da pasta `package`:
 
   ```
-  c:/node/node.exe cli.js install -gf
+  C:\node\node.exe cli.js install -gf
   ```
   
-6. Execute o comando para instalar o phonegap
+6. Execute o comando para instalar o phonegap dentro da pasta `C:\node\`
 
   ```
   npm install -g phonegap
   ```
   Aguarde alguns minutos e o PhoneGap está instalado
+
+7. Adicione a pasta `C:\node` no PATH do seu usuário ou do sistema
