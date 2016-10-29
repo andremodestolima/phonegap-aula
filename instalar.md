@@ -1,16 +1,30 @@
 # Como instalar PhoneGap
 
-## Com permissão de administrador
+### Intalar o Node JS e o PhoneGap Cli
 
 1. Baixa o nodejs versão LTS .msi
 
   [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 2. Execute este comando na sua linha de comando
-```
-npm install -g phonegap
-```
-Aguarde alguns minutos e o PhoneGap está instalado
+  ```
+  npm install -g phonegap
+  ```
+  Aguarde alguns minutos e o PhoneGap está instalado
+
+3. Instale o WebStorm
+
+  https://www.jetbrains.com/webstorm/download/#section=windows-version
+  
+  Adiquira sua licença de estudante por este link usando seu e-mail da infnet
+  
+  https://www.jetbrains.com/student/
+
+4. Crie um novo projeto usando o WebStorm
+
+  
+
+
 
 ## Sem permissão de administrador
 
