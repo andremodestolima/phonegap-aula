@@ -12,7 +12,7 @@
   ```
   Aguarde alguns minutos e o PhoneGap está instalado
 
-*Se você não possue a permissao de administrador, va para este trecho do tutorial [Sem Permissão de Administrador](#sem-permissao-de-administrador) e volta para ao terminar.*
+*Se você não possue a permissao de administrador, va para este trecho do tutorial [Sem Permissão de Administrador](#sem-permissão-de-administrador) e volta para ao terminar.*
 
 3. Instale o WebStorm
 
