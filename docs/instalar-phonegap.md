@@ -78,4 +78,8 @@
   ```
   Aguarde alguns minutos e o PhoneGap está instalado
 
-7. Adicione a pasta `C:\node` no PATH do seu usuário ou do sistema
+7. Adicione a pasta `C:\node` no PATH na primeira linha do arquivo phonegap.cmd dentro da pasta `C:\node`
+
+  ```
+  SET PATH=%PATH%;c:\node\ 
+  ```
