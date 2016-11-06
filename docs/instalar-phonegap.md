@@ -57,9 +57,9 @@
 
   [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
   
-2. Salve na pasta `C:\node\`
+2. Salve na pasta `C:\node\` OU DENTRO DO SEU PENDRIVE
 
-3. Faça o download deste pacote e salve na mesma pasta que salvou o node.js
+3. Faça o download deste pacote e salve na mesma pasta que salvou o Node.js
 
   [https://registry.npmjs.org/npm/-/npm-3.10.9.tgz](https://registry.npmjs.org/npm/-/npm-3.10.9.tgz)
   
@@ -91,7 +91,6 @@
 9. Vá em *Languagues e Frameworks > Node.js and NPM* e selecione a opção de *ADD*
 
     ![8](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_8.png?raw=true)
-
    
 10. Selecione o `node.exe` que você instalou dentro do seu pendrive. Lembrando que é possivel ter que refazer essa configuração toda vez que a LETRA DO DRIVER do seu Pendrive for alterada.
 
