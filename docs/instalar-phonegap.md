@@ -81,5 +81,18 @@
 7. Adicione a pasta `C:\node` no PATH na primeira linha do arquivo phonegap.cmd dentro da pasta `C:\node`
 
   ```
-  SET PATH=%PATH%;c:\node\ 
+  SET PATH=%PATH%;%~dp0\node\
   ```
+
+8. Depois de instalar o Webstorm (passos no inicio deste tutorial), antes de criar um novo projeto, vá em *Configure > Settings*.
+
+   ![7](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_7.png?raw=true)
+
+9. Vá em *Languagues e Frameworks > Node.js and NPM* e selecione a opção de *ADD*
+
+    ![8](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_8.png?raw=true)
+
+   
+10. Selecione o `node.exe` que você instalou dentro do seu pendrive. Lembrando que é possivel ter que refazer essa configuração toda vez que a LETRA DO DRIVER do seu Pendrive for alterada.
+
+   ![9](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_9.png?raw=true)
