@@ -73,7 +73,7 @@
   
 2. Salve na pasta `C:\node\`
 
-3. Faça o download deste pacote e salve na mesma pasta que salvou o Node.js
+3. Faça o download deste pacote e salve na mesma pasta que salvou o node.exe
 
   [https://registry.npmjs.org/npm/-/npm-3.10.9.tgz](https://registry.npmjs.org/npm/-/npm-3.10.9.tgz)
   
@@ -129,7 +129,7 @@
 
 5. Execute o comando dentro da pasta `package`
 
-*Se você não lembra como acessar a pasta pelo prompt, vá para este trecho do tutorial [Como trafegar entre diretórios no prompt](#como-trafegar-entre-diretorios-no-prompt).*
+*Se você não lembra como acessar a pasta pelo prompt, vá para este trecho do tutorial [Como trafegar entre diretórios no prompt](#como-trafegar-entre-diretórios-no-prompt).*
 
   ```
   E:\node\node.exe cli.js install -gf
