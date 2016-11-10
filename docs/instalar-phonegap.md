@@ -30,11 +30,15 @@
   
   https://www.jetbrains.com/student/
   
-3.1. Insale o WebStorm no Pendrive
+  3.1. Insale o WebStorm no Pendrive
 
-  Execute a instalação normalmente, mas ao definir o local de instalação, altere o caminho para o seu Pendrive
+    Execute a instalação normalmente, mas ao definir o local de instalação, altere o caminho para o seu Pendrive
+
+    ![12](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_12.png?raw=true)
+    
+  3.2. Após instalado, encontre o arquivo executável 
   
-  ![12](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_12.png?raw=true)
+  `WebStorm.exe` ou `WebStorm64.exe` em `\WebStorm 2016.2.4\bin` (número variável de acordo com a versão)
 
 4. Crie um novo projeto usando o WebStorm
 
