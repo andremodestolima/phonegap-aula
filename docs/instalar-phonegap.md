@@ -30,15 +30,11 @@
   
   https://www.jetbrains.com/student/
   
-  3.1. Insale o WebStorm no Pendrive
+3.1. Insale o WebStorm no Pendrive
 
-    Execute a instalação normalmente, mas ao definir o local de instalação, altere o caminho para o seu Pendrive
-
-    ![12](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_12.png?raw=true)
-    
-  3.2. Após instalado, encontre o arquivo executável 
+  Execute a instalação normalmente, mas ao definir o local de instalação, altere o caminho para o seu Pendrive
   
-  `WebStorm.exe` ou `WebStorm64.exe` em `\WebStorm 2016.2.4\bin` (número variável de acordo com a versão)
+  ![12](https://github.com/ebertti/phonegap-aula/blob/master/imagens/Screenshot_12.png?raw=true)
 
 4. Crie um novo projeto usando o WebStorm
 
@@ -77,7 +73,7 @@
   
 2. Salve na pasta `C:\node\`
 
-3. Faça o download deste pacote e salve na mesma pasta que salvou o node.exe
+3. Faça o download deste pacote e salve na mesma pasta que salvou o Node.js
 
   [https://registry.npmjs.org/npm/-/npm-3.10.9.tgz](https://registry.npmjs.org/npm/-/npm-3.10.9.tgz)
   
@@ -133,7 +129,7 @@
 
 5. Execute o comando dentro da pasta `package`
 
-*Se você não lembra como acessar a pasta pelo prompt, vá para este trecho do tutorial [Como trafegar entre diretórios no prompt](#como-trafegar-entre-diretórios-no-prompt).*
+*Se você não lembra como acessar a pasta pelo prompt, vá para este trecho do tutorial [Como trafegar entre diretórios no prompt](#como-trafegar-entre-diretorios-no-prompt).*
 
   ```
   E:\node\node.exe cli.js install -gf
