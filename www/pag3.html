@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -13,13 +11,26 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>TP1</title>
 </head>
-<body onload="pronto(1)">
-<h2>
-    Nivel da bateria: <span id="bateriaNivel"></span>
-</h2>
-<a href="pag2.html">proxima pagina</a>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-</body>
+<body onload="pronto(3)">
 
+    <h3>Dados Aceleremetro</h3>
+    <ul>
+        <li>
+            X: <span id="celeraX"></span>
+        </li>
+        <li>
+            Y: <span id="celeraY"></span>
+        </li>
+        <li>
+            Z: <span id="celeraZ"></span>
+        </li>
+        <li>
+            Timestamp: <span id="celeraTS"></span>
+        </li>
+    </ul>
+    <button id="atualizar">atualizar</button>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>

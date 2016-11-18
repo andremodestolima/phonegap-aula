@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -13,13 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>TP1</title>
 </head>
-<body onload="pronto(1)">
-<h2>
-    Nivel da bateria: <span id="bateriaNivel"></span>
-</h2>
-<a href="pag2.html">proxima pagina</a>
+
+<body onload="pronto(2)">
+<ul>
+    <li>
+        Modelo: <span id="dispositivoModelo"></span>
+    </li>
+    <li>
+        Versao: <span id="cordovaVersao"></span>
+    </li>
+</ul>
+
+<button id="doubleTouch">vibrar</button>
+<a href="pag3.html">proxima pagina</a>
+
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
-
 </html>
