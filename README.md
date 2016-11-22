@@ -9,6 +9,10 @@ Aulas de PhoneGap para aula na Infnet
 
 [Ferramenta para emulação Ripple](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)
 
+[Publicando Repositório no GitHub](docs/git.md)
+
+[Usando Git Bash como Terminal no Webstorm](docs/gitbash-webstorm.md)
+
 ## Exemplos e Exercícios
 
 TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https://build.phonegap.com/apps/2361042/share)
