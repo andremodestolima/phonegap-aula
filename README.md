@@ -11,6 +11,6 @@ Aulas de PhoneGap para aula na Infnet
 
 ## Exemplos e Exercícios
 
-TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https://build.phonegap.com/apps/2361769/share)
+TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https://build.phonegap.com/apps/2361042/share)
 
 Arquivo: [Código](https://github.com/ebertti/phonegap-aula/tree/arquivo) - [App](https://build.phonegap.com/apps/2361042/share)
