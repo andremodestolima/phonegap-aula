@@ -35,7 +35,7 @@ function pagina2() {
 
 function pagina3() {
     obter_celera();
-    document.getElementById('atualizar').addEventListener(function () {
+    document.getElementById('atualizar').addEventListener('touchend', function () {
         obter_celera();
     });
 }
