@@ -20,3 +20,5 @@ TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https:
 Arquivo: [Código](https://github.com/ebertti/phonegap-aula/tree/arquivo) - [App](https://build.phonegap.com/apps/2361042/share)
 
 localStorage: [Código](https://github.com/ebertti/phonegap-aula/tree/localstorage)
+
+Ionic Lista: [Código](https://github.com/ebertti/phonegap-aula/tree/ionic-list) - Ionic View: 37db184e
