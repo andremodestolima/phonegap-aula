@@ -1,50 +1,64 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
-
-  // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
-  }, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
-  }];
+.factory('Tarefas', function() {
+  var tarefas = null;
+  var tarefas_string = localStorage.getItem('tarefas');
+  if(tarefas_string) {
+    tarefas = JSON.parse(tarefas_string);
+  } else {
+    tarefas = [];
+  }
 
   return {
-    all: function() {
-      return chats;
+    todas: function() {
+      return tarefas;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+
+    remover: function(tarefa) {
+      tarefas.splice(tarefas.indexOf(tarefa), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
-        }
-      }
-      return null;
+
+    adicionar: function (titulo) {
+      tarefas.push({
+        titulo: titulo,
+        feito: false
+      });
+
+      return tarefas;
+    },
+
+    limpar: function () {
+      tarefas.splice(0, tarefas.length); // limpa a lista
+      localStorage.removeItem('tarefas');
+    },
+
+    salvar: function () {
+      var tarefas_salvar_string = angular.toJson(tarefas);
+      localStorage.setItem('tarefas', tarefas_salvar_string);
     }
   };
-});
+})
+
+.factory('Configuracoes', function () {
+  var configuracao = null;
+  var configuracao_string = localStorage.getItem('configuracoes');
+  if(configuracao_string) {
+    configuracao = JSON.parse(configuracao_string);
+  } else {
+    configuracao = {
+      autoSalvar: true
+    };
+  }
+
+  return {
+    todas: function() {
+      return configuracao;
+    },
+
+    salvar: function () {
+      var c = JSON.stringify(configuracao);
+      localStorage.setItem('configuracoes', c)
+    }
+  };
+})
+;

@@ -1,28 +1,47 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('TarefasCtrl', function($scope, Tarefas, Configuracoes) {
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+  $scope.tarefas_listar = Tarefas.todas();
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
+  $scope.teclado_salvar = function (evt) {
+    if (evt.which === 13) { // checa se apertou enter
+      Tarefas.adicionar(this.titulo);
+      this.titulo = '';
+    }
   };
+
+  $scope.excluir = function (tarefa) {
+    Tarefas.remover(tarefa);
+  };
+
+  $scope.marcar_feito = function (tarefa) {
+    tarefa.feito = !tarefa.feito;
+  };
+
+  var configuracoes = Configuracoes.todas();
+
+  $scope.$watch(function () {
+    if(configuracoes.autoSalvar){
+      Tarefas.salvar();
+    }
+  })
+
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+.controller('ConfiguracaoCtrl', function($scope, Tarefas, Configuracoes) {
+  $scope.configuracoes = Configuracoes.todas();
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
+  $scope.salvar = function () {
+    Tarefas.salvar();
   };
+
+  $scope.$watch(function () {
+    Configuracoes.salvar();
+  });
+
+  $scope.limpar = function () {
+    Tarefas.limpar();
+  };
+
 });

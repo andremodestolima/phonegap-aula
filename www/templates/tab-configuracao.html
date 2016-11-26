@@ -1,0 +1,13 @@
+<ion-view view-title="Configuração">
+  <ion-content>
+    <ion-list>
+    <ion-toggle ng-model="configuracoes.autoSalvar">
+        Auto salvar
+    </ion-toggle>
+      <ion-item>
+        <button class="button button-full button-large button-balanced" ng-hide="configuracoes.autoSalvar" ng-click="salvar()">Salvar</button>
+        <button class="button button-full button-large button-assertive" ng-click="limpar()" >Limpar</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
