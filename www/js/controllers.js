@@ -1,6 +1,20 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, $cordovaFacebook) {
+
+  $scope.logar = function(){
+    $cordovaFacebook.login(["public_profile", "email"]).then(function(success){
+      console.log('sucesso', success);
+
+    }, function (error) {
+      console.log('erro', error);
+
+    });
+    console.log('clicou');
+
+  };
+
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
