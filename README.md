@@ -13,6 +13,8 @@ Aulas de PhoneGap para aula na Infnet
 
 [Usando Git Bash como Terminal no Webstorm](docs/gitbash-webstorm.md)
 
+[Configurando ambiente Android](docs/configurando-ambiente-android.md)
+
 ## Exemplos e Exercícios
 
 TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https://build.phonegap.com/apps/2361042/share)
