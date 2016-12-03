@@ -17,21 +17,21 @@
 
    ii. Aperte o botão variáveis de ambiente
 
-      Adicione as seguintes variáveis:
+     Adicione as seguintes variáveis:
    
-      * `JAVA_HOME` com o caminho para o JDK que foi instalado, ex: `C:\Program Files\Java\jdk1.8.0_111`
+     * `JAVA_HOME` com o caminho para o JDK que foi instalado, ex: `C:\Program Files\Java\jdk1.8.0_111`
    
-      * `ANDROID_HOME` com o caminho que o AndroidSDK foi instalado, ex: `C:\android-sdk`
+     * `ANDROID_HOME` com o caminho que o AndroidSDK foi instalado, ex: `C:\android-sdk`
 
-      Adicione as seguintes pastas a variavel `Path` referente a pasta que foi instalada o android-sdk
+     Adicione as seguintes pastas a variavel `Path` referente a pasta que foi instalada o android-sdk
 
-      * C:\android-sdk\tools
-      * C:\android-sdk\platform-tools
+     * C:\android-sdk\tools
+     * C:\android-sdk\platform-tools
       
-      Agora adicione as pastas referentes a instalação do JAVA
+     Agora adicione as pastas referentes a instalação do JAVA
       
-      * C:\Program Files\Java\jdk1.8.0_111\bin
-      * C:\Program Files\Java\jre1.8.0_111\bin
+     * C:\Program Files\Java\jdk1.8.0_111\bin
+     * C:\Program Files\Java\jre1.8.0_111\bin
 
 4) Verificando se tudo foi instalado:
 
