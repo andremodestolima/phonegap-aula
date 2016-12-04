@@ -14,11 +14,11 @@ Antes de começar a mexer em código, precisamos criar uma conta como desenvolve
 
 https://developers.facebook.com/apps
 
-1) Depois da aplicação criada, vá no menu **Configurações > Básico**.
+1. Depois da aplicação criada, vá no menu **Configurações > Básico**.
 
-2) Clique em **+ Adicionar plataforma**, selecione **Android**
+2. Clique em **+ Adicionar plataforma**, selecione **Android**
 
-3) Preencha o **Nome do pacote do Google Play** com o seguinte formato:
+3. Preencha o **Nome do pacote do Google Play** com o seguinte formato:
   
   org.seu_usuario_github.nome_do_app
   
@@ -27,43 +27,37 @@ https://developers.facebook.com/apps
   Não esqueça de atualizar o `config.xml` do seu projeto com este namespace na segunda linha do projeto. Ex:
   
   ```xml
-   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-     <widget id="org.ebertti.testefacebook" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-     <name>Ionic Facebook</name>
+  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <widget id="org.ebertti.testefacebook" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ionic Facebook</name>
   ```
-e
-4) Vamos gerar uma **Hashes Chave** para testar, rodando o seguinte comando no **git bash**
+   
+4. Vamos gerar uma **Hashes Chave** para testar, rodando o seguinte comando no **git bash**
 
   ```bash
-    $ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+     $ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
   ```
   
   Este comando irá gerar algo parecido com isso: `eapaGG1pgH9Cgze7o8Nhr9WFwDU=`, Copie esse valor no campo *Hashes chave*
   
   Você pode e deve adicionar vários Hashs, um para cada computador que está desenvolvendo sua aplicação
-   Android com Cordova.
+  Android com Cordova.
   
 ## Phonegap
 
-1) Adicione a plataforma android no projeto
+1. Adicione a plataforma android no projeto
 
   ```bash
   $ phonegap platform add android  
   ```
 
-2) Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
-  
-  ```bash
-  $ phonegap plugin add cordova-plugin-whitelist
-  ```
-
-3) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
+2. Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
   
   ```bash
   $ phonegap plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789" --variable APP_NAME="myApplication"
   ```
   
-4) Verifique se o arquivo config.xml possui o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
+3. Verifique se o arquivo config.xml possui o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
 
 Agora você á pode fazer o login no facebook
 
@@ -98,7 +92,7 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
 
 ## Ionic 
 
-1) Instale os seguintes pacotes, seguindo estes comandos
+1. Instale os seguintes pacotes, seguindo estes comandos
 
   ```bash
   $ npm install -g bower
@@ -106,9 +100,9 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
   $ bower install ionic-native
   ```
   
-2) Adicione a referência do `ionic-native` no arquivo *www/index.html* logo apos a referência ao `ionic`, Ex:
+2. Adicione a referência do `ionic-native` no arquivo *www/index.html* logo apos a referência ao `ionic`, Ex:
 
-```html
+  ```html
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     
@@ -118,27 +112,27 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-```
+  ```
 
-3) Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
+3. Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
   
   ```bash
   $ phonegap plugin add cordova-plugin-whitelist
   ```
 
-4) Adicione a plataforma android no projeto
+4. Adicione a plataforma android no projeto
 
   ```bash
   $ ionic platform add android  
   ```
 
-5) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
+5. Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
    
   ```bash
   $ ionic plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789" --variable APP_NAME="myApplication"
   ```
 
-6) Verifique se o arquivo config.xml possue o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
+6. Verifique se o arquivo config.xml possue o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
 
 Agora você á pode fazer o login no facebook
 
