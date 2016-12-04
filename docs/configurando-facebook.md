@@ -51,22 +51,28 @@ e
   $ phonegap platform add android  
   ```
 
-2) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
+2) Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
+  
+  ```bash
+  $ phonegap plugin add cordova-plugin-whitelist
+  ```
+
+3) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
   
   ```bash
   $ phonegap plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789" --variable APP_NAME="myApplication"
   ```
   
-3) Verifique se o arquivo config.xml possui o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
+4) Verifique se o arquivo config.xml possui o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
 
 Agora você á pode fazer o login no facebook
 
 ```javascript
 facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
-    var exemplo_sucesso = {
-        status: "connected",
-        authResponse: {
-            session_key: true,
+    var exemplo_sucesso = { // isso é apenas um exemplo
+      status: "connected",  // da estrutura retornada
+      authResponse: {       // o valor correto está em
+        session_key: true,  // sucesso
             accessToken: "<string longa>",
             expiresIn: 5183979,
             sig: "<string longa>",
@@ -114,19 +120,25 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
 
 ```
 
-3) Adicione a plataforma android no projeto
+3) Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
+  
+  ```bash
+  $ phonegap plugin add cordova-plugin-whitelist
+  ```
+
+4) Adicione a plataforma android no projeto
 
   ```bash
   $ ionic platform add android  
   ```
 
-4) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
+5) Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
    
   ```bash
   $ ionic plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789" --variable APP_NAME="myApplication"
   ```
 
-5) Verifique se o arquivo config.xml possue o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
+6) Verifique se o arquivo config.xml possue o cordova-plugin-facebook4 com o APP_ID e o APP_NAME
 
 Agora você á pode fazer o login no facebook
 
@@ -135,10 +147,10 @@ Agora você á pode fazer o login no facebook
 angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope, $cordovaFacebook) {
   $cordovaFacebook.login(["public_profile", "email"]).then(function (sucesso) {
-    var exemplo_sucesso = {
-      status: "connected",
-      authResponse: {
-        session_key: true,
+    var exemplo_sucesso = { // isso é apenas um exemplo
+      status: "connected",  // da estrutura retornada
+      authResponse: {       // o valor correto está em
+        session_key: true,  // sucesso
         accessToken: "<string longa>",
         expiresIn: 5183979,
         sig: "...",
@@ -150,8 +162,8 @@ angular.module('starter.controllers', [])
     localStorage.setItem('facebook_id', facebook_id);
   
     $cordovaFacebook.api('me', ['public_profile']).then(function (dados) {
-      var exemplo_dados = {
-        "id": "634565435",
+      var exemplo_dados = { // outro exemplo de retorno
+        "id": "634565435",  // o valor certo esta na var dados
         "name": "Ezequiel Bertti"
       };
       localStorage.setItem('nome', dados.name);
