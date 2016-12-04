@@ -113,19 +113,17 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
     <script src="cordova.js"></script>
 
   ```
-
-3. Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
-  
-  ```bash
-  $ phonegap plugin add cordova-plugin-whitelist
-  ```
-
-4. Adicione a plataforma android no projeto
+3. Adicione a plataforma android no projeto
 
   ```bash
   $ ionic platform add android  
   ```
-
+  
+4. Adicione o plugin do de [cordova-plugin-whitelist](https://github.com/apache/cordova-plugin-whitelist)
+  
+  ```bash
+  $ phonegap plugin add cordova-plugin-whitelist
+  ```
 5. Adicione o plugin do facebook, não esqueça que será necessário o ID do App criado no Facebook
    
   ```bash
