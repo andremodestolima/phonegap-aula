@@ -15,6 +15,8 @@ Aulas de PhoneGap para aula na Infnet
 
 [Configurando ambiente Android](docs/configurando-ambiente-android.md)
 
+[Configurando Facebook](docs/configurando-facebook.md)
+
 ## Exemplos e Exercícios
 
 TP1: [Código](https://github.com/ebertti/phonegap-aula/tree/tp1) - [App](https://build.phonegap.com/apps/2361042/share)
