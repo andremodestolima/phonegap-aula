@@ -26,3 +26,5 @@ Arquivo: [Código](https://github.com/ebertti/phonegap-aula/tree/arquivo) - [App
 localStorage: [Código](https://github.com/ebertti/phonegap-aula/tree/localstorage)
 
 Ionic Lista: [Código](https://github.com/ebertti/phonegap-aula/tree/ionic-list) - Ionic View: 37db184e
+
+Ionic Facebook: [Código](https://github.com/ebertti/phonegap-aula/blob/ionic-facebook/www/js/controllers.js)
