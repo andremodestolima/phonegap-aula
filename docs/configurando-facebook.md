@@ -77,7 +77,7 @@ facebookConnectPlugin.login(['public_profile','email'], function(sucesso){
     var facebook_id = sucesso.authResponse.userID;
     localStorage.setItem('facebook_id', facebook_id);
     
-    facebookConnectPlugin.api('me', function(dados){
+    facebookConnectPlugin.api('me', ['public_profile'], function(dados){
         var exemplo_dados = {
           "id": "634565435",
           "name": "Ezequiel Bertti"
