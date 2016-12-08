@@ -1,5 +1,9 @@
 # Configurando ambiente Android
 
+Vídeo com o passo a passo e explicando cada detalhe:
+
+https://www.youtube.com/watch?v=Lio23jkqjWU
+
 1. Baixar o JDK do java
 
   http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
