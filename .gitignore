@@ -24,3 +24,9 @@ plugins/
 
 # ignorar pasta do .idea (webstorm)
 .idea
+node_modules/
+platforms/
+plugins/
+bower_components/
+.idea
+.io-config.json

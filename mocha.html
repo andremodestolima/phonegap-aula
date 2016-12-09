@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testes com Mocha</title>
+
+    <link href="bower_components/mocha/mocha.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="mocha"></div>
+
+
+    <script src="js/codigo.js"></script>
+
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/chai/chai.js"></script>
+
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+
+    <script src="testes/mocha.js"></script>
+
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>

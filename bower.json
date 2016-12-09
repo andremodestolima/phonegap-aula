@@ -1,0 +1,22 @@
+{
+  "name": "testeUnitario",
+  "authors": [
+    "Ezequiel Bertti <ebertti@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0",
+    "qunit": "^2.1.0"
+  }
+}
