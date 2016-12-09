@@ -21,19 +21,30 @@
     firebase.initializeApp(config);
   </script>
   <script>
-    angular.module('project', ['firebase'])
+    angular.module('project', ['ngRoute', 'firebase'])
       .controller('MainController', function($scope, $firebaseObject) {
-        var ref = firebase.database().ref().child("data");
-        var syncObject = $firebaseObject(ref);
-        syncObject.$bindTo($scope, "data");
-
+        var user = localStorage.getItem('user');
+        if(!user){
+          user = new Date().getTime();
+          localStorage.setItem('user', user);
+        }
+        var salas = firebase.database().ref("salas");
+        var profileRef = salas.child(user);
+        var fo = $firebaseObject(profileRef);
+        fo.$bindTo($scope, "user");
+        var fs = $firebaseObject(salas);
+        fs.$bindTo($scope, "salas");
       })
     ;
   </script>
 
 </head>
 <body ng-controller="MainController">
-  <input type="text" ng-model="data.text"/>
-  <h1>Eu disse: {{ data.text }}</h1>
+  <input type="text" ng-model="user.texto"/>
+  <ul>
+    <li ng-repeat="user in salas">
+      {{ user.texto }}
+    </li>
+  </ul>
 </body>
 </html>
