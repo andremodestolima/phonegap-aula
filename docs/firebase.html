@@ -31,7 +31,21 @@
         var salas = firebase.database().ref("salas");
         var profileRef = salas.child(user);
         var fo = $firebaseObject(profileRef);
-        fo.$bindTo($scope, "user");
+
+        $scope.$watch('user.texto', function () {
+            if($scope.user) {
+              fo.texto = $scope.user.texto;
+              fo.$save();
+            }
+        });
+
+        $scope.limpar = function ($event) {
+          if(event.which === 13) {
+            event.preventDefault();
+            $scope.user.texto = '';
+          }
+        };
+
         var fs = $firebaseObject(salas);
         fs.$bindTo($scope, "salas");
       })
@@ -40,7 +54,7 @@
 
 </head>
 <body ng-controller="MainController">
-  <input type="text" ng-model="user.texto"/>
+  <textarea type="text" ng-model="user.texto" ng-keydown="limpar($event)"></textarea>
   <ul>
     <li ng-repeat="user in salas">
       {{ user.texto }}
