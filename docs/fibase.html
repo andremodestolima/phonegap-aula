@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="project">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste Angular</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCR8hVx0s95xmUKOsIbkAJfqE3KdPVu7nY",
+      authDomain: "angularfirebase-86231.firebaseapp.com",
+      databaseURL: "https://angularfirebase-86231.firebaseio.com",
+      storageBucket: "angularfirebase-86231.appspot.com",
+      messagingSenderId: "784779019736"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+    angular.module('project', ['firebase'])
+      .controller('MainController', function($scope, $firebaseObject) {
+        var ref = firebase.database().ref().child("data");
+        var syncObject = $firebaseObject(ref);
+        syncObject.$bindTo($scope, "data");
+
+      })
+    ;
+  </script>
+
+</head>
+<body ng-controller="MainController">
+  <input type="text" ng-model="data.text"/>
+  <h1>Eu disse: {{ data.text }}</h1>
+</body>
+</html>
