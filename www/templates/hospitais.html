@@ -1,0 +1,24 @@
+<ion-view title="Hospitais" id="page2">
+  <ion-content padding="true" class="has-header">
+    <form id="hospitais-form1" class="list">
+      <label class="item item-input" id="hospitais-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+    </form>
+    <div class="list card" id="hospitais-card21" ng-repeat="local in locais">
+      <ion-item class="item-avatar" id="hospitais-list-item11">
+        <h2>{{ local.nome }} - {{ local.bairro }}</h2>
+      </ion-item>
+      <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+        <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+      </div>
+      <ion-item class="item-icon-left assertive" id="hospitais-list-item12">
+        <i class="icon ion-ios-location-outline"></i>Obter Direções
+      </ion-item>
+      <ion-item class="item-icon-left assertive" id="hospitais-list-item12">
+        <i class="icon ion-ios-location-outline"></i>{{local.telefone}}
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
