@@ -37,6 +37,6 @@ Phonegap Facebook: [Código](https://github.com/ebertti/phonegap-aula/blob/phone
  
 Gulp: [Código](https://github.com/ebertti/phonegap-aula/tree/gulp)
 
-Visit: [Template](https://github.com/ebertti/phonegap-aula/tree/visit/wwww)
+Visit: [Template](https://github.com/ebertti/phonegap-aula/tree/visit/www)
 
 Teste Unitário: [Código](https://github.com/ebertti/phonegap-aula/tree/teste-unitario)
