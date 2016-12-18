@@ -6,3 +6,4 @@ platforms/
 plugins/
 .idea
 .io-config.json
+bower_components
